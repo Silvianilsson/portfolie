@@ -1,0 +1,292 @@
+/* --------------------------------
+	Author		Silvia Nilsson
+	Version		v1.0 | 2012-10-21 
+----------------------------------*/
+
+/* -------------------------------
+	Reset
+	Font
+	Site Map
+		Layout
+		Site Styles
+		Header
+		Navigation
+	Pages
+		Index
+		Om mig
+		Contact
+		Foto
+		Länkar
+----------------------------------*/
+
+/*---------- Reset ---------------*/
+body, div, ul, li
+{
+	margin:0;
+	padding:0;
+}
+
+/*----------- Font ----------------*/
+h1, p, a, button, article 
+{
+	font-family:Tahoma, Geneva, sans-serif;
+}
+
+/*----------- Site Map -------------*/
+/*----------- Layout --------------*/
+#page_container 
+{
+	width:940px;
+	height:800px;
+	margin:100px auto;
+	background-color:#FFF;
+}
+
+#head
+{
+	height:20%;
+	color:#000;	
+}
+
+#head-left 
+{
+	float:left;
+	width:40%;
+	height:100%;
+	background-image:url(../images/greenback.jpg);
+	color:#000;
+}
+
+#head-right
+{
+	float:right;
+	width:60%;
+	height:100%;
+	background-image:url(../images/greenback.jpg);
+}
+
+#left_column 
+{   width:0%;
+	height:70%;
+	float:left;
+}
+
+#center_column 
+{
+	width:100%;
+	height:70%;
+	float:left;
+}
+
+#right_column 
+{
+	width:0%;
+	height:70%;
+	float:left;
+}
+
+#footer
+{
+	height:10%;
+	clear:both;
+	text-align:center;
+	background-image:url(../images/greenback.jpg);
+	line-height:70px
+}
+
+/*----------- Site Styles -----------------*/
+
+body 
+{
+	background-image:url(../images/greenback.jpg);
+}
+
+a:link 
+{
+  text-decoration:none;
+  color:#000;
+}
+
+a:visited
+{
+	color:#000;
+}
+/*------------ Navigation -----------------*/
+
+ul#list-nav 
+{
+    list-style:none;
+	position:relative;
+	top:50%;
+}
+   
+   
+ul#list-nav li 
+{
+    display:inline;
+}
+
+ul#list-nav li a
+{
+	 text-decoration:none;
+	 width:auto;
+	 color:#000;
+	 float:left;
+	 font-size:18px;
+	 padding:0 10px;
+	 
+}
+
+.selected 
+{
+	background-color:#00F;
+	font-weight:800;
+}
+
+	/*-------------- Header -------------------*/
+header
+{
+	font-size:38px;
+	top:10%;
+	position:relative;
+	left:10%;
+	color:#000; 
+}
+
+header h1
+{
+	color:#000;
+}
+
+/*--------------Pages ----------------------*/
+
+/*--------------Index ----------------------*/
+.me_pic
+{
+	width:400px;
+	height:auto;
+	position:relative;
+	left:50%;
+	top:90px;
+	-webkit-mozilla-border-radius: 8px;
+     border-radius: 8px; 
+}
+
+#datum
+{
+	position:relative;
+	left:100px;
+	top:-300px;
+	font-size:50px;
+	 
+}
+
+#klocka
+{
+	position:relative;
+	left:50px;
+	top:-250px;
+}
+
+/*-------------- Om mig --------------------*/
+article.om_mig
+{
+	width:50%;
+	position:relative;
+	top:30%;
+	left:35%;
+	font-size:24px;
+}
+
+.om_mig_list
+{
+	position:relative;
+	left:40px;
+	top:5px;
+	font-size:24px;
+}
+
+.om_mig_list button
+{
+	border:none;
+	color:black;
+	background-color:transparent;
+	text-decoration:none;
+	font-size:24px;
+	cursor:pointer;
+}
+
+/*-------------- Länkar -------------------*/
+ul.links_list 
+{
+	position:relative;
+	left:40px;
+	top:150px;
+}
+
+.links_list li  
+{
+	font-size:24px;
+}
+
+.links_pic 
+{
+    position:relative;
+	left:25%;
+	top:-30px;
+}
+
+/*-------------- Kontakt -----------------*/
+.contact
+{
+	font-size:20px;
+	width:50%;
+	position:relative;
+	top:150px;
+	left:20px;
+}
+
+.contact p
+{
+	right:25%;
+}
+
+img.sladd
+{
+	position:relative;
+	top:-50px;
+	left:50%;
+}
+
+/*--------------- Foto -------------------*/
+img.foto
+{
+	position:relative;
+	top:5%;
+	left:5%;
+}
+
+img.foto1
+{
+    position:relative;
+	top:30%;
+	left:-28%;
+		
+}
+
+img.foto2
+{
+	position:relative; 
+	top:35%;
+	left:5%;
+	
+}
+
+img.foto3
+{
+	position:relative;
+	top:58%;
+	left:-28%;
+}
+	
+

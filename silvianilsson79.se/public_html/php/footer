@@ -1,0 +1,5 @@
+<?php
+<hr>
+<p>&copy; <?php echo date('Y') ?> Ola Karlsson</p>
+</div>
+?>
