@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <title>Silvia Nilsson</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link href="css/lightbox.css" rel="stylesheet" />
-    
-    <script src="js/jquery-1.7.2.min.js"></script>
-    <script src="js/lightbox.js"></script>
-
-</head>
+<?php require_once('./php/header.php'); ?>
 
 <body>
   

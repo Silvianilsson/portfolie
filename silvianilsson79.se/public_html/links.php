@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>Silvia Nilsson</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+<?php require_once('./php/header.php'); ?>
 
 <body>
   
