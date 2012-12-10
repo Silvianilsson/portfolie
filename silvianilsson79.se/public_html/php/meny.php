@@ -1,15 +1,15 @@
 <?php
 
 $meny = array();
-$meny[] = array('text' => 'Hem', 'url' => 'index.php');  
-$meny[] = array('text' => 'Ommig', 'url' => 'ommig.php');
-$meny[] = array('text' => 'Kontakt', 'url' => 'kontakt.php');
-$meny[] = array('text' => 'Foton', 'url' => 'foton.php');
-$meny[] = array('text' => 'Länkar', 'url' => 'links.php');
+$meny[] = array('text' => 'Hem', 'url' => '/index.php');  
+$meny[] = array('text' => 'Ommig', 'url' => '/ommig.php');
+$meny[] = array('text' => 'Kontakt', 'url' => '/kontakt.php');
+$meny[] = array('text' => 'Foton', 'url' => '/foton.php');
+$meny[] = array('text' => 'Kurser', 'url' => '/kurser.php');
+$meny[] = array('text' => 'Länkar', 'url' => '/links.php');
 ?>
 
 <?php $current_url = $_SERVER['REQUEST_URI']; ?>
-
 
 <ul id="list-nav">
 	<?php foreach ($meny as $meny_item) : ?>
@@ -19,7 +19,7 @@ $meny[] = array('text' => 'Länkar', 'url' => 'links.php');
 
 	if ($meny_item['url'] == $current_url)
 	{
-		$cssClass = 'class="selected"';
+		$cssClass = ' class="selected"';
 	}
 	?>
 

@@ -20,7 +20,7 @@
 
 <section id="center_column">
  <img class ="me_pic" src="images/jag/lightbox13.jpg" alt="Silvia" title="Silvia"/>
- <section id="datum"></section>
+ <section id="datum"><?php require_once('./php/date.php'); ?></section>
  <canvas id="klocka" height="300" width="300"></canvas>
 </section>
 

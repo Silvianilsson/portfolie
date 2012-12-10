@@ -1,17 +1,3 @@
-// JavaScript Document
-function formatDate(d)
-{ 
-	  var days = ['sön', 'mån', 'tis', 'ons', 'tors', 'fre', 'lör'];
-	  var months = ['jan', 'feb', 'mars', 'april', 'maj', 'juni', 'juli', 'aug', 'sept', 'okt', 'nov', 'dec'];
-	  
-	  return days[d.getDay()] + ' ' + d.getDate() + ' ' + months[d.getMonth()];
-}
-
-var d = new Date();
-var datum = document.getElementById("datum");
-
-datum.innerHTML = formatDate(d);
-
 function draw() 
 {
 	var canvas = document.getElementById('klocka');
@@ -21,11 +7,11 @@ function draw()
           c2d.clearRect(0,0,300,300);
           //Define gradients for 3D / shadow effect
           var grad1=c2d.createLinearGradient(0,0,300,300);
-          grad1.addColorStop(0,"#D8ff80");
-          grad1.addColorStop(1,"#80ff20");
+          grad1.addColorStop(0,"#000000");
+          grad1.addColorStop(1,"#000000");
           var grad2=c2d.createLinearGradient(0,0,300,300);
-          grad2.addColorStop(0,"#80ff20");
-          grad2.addColorStop(1,"#D83040");
+          grad2.addColorStop(0,"#000000");
+          grad2.addColorStop(1,"#000000");
           c2d.font="Bold 20px Arial";
           c2d.textBaseline="middle";
           c2d.textAlign="center";
