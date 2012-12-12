@@ -16,15 +16,15 @@
 
 <section id="center_column">
  <ul class="links_list">
-  <li><a href="http://www.Boozt.com">Sten, Sax, Påse</a></li>
+  <li><a href="./innlamningsuppgift.php">Sten, Sax, Påse</a></li>
   <li><a href="http://www.Bonprix.se">Bonprix</a></li>
   <li><a href="http://www.Love2shop.se">Love2shop</a></li>
   <li><a href="http://www.Modehus.nu">Modehus</a></li>
   <li><a href="http://www.Bubbleroom.se">Bubbleroom</a></li>
 </ul>
 
-<img class="links_pic" src="images/kurser2.jpg" alt="Skor" title="Kurs"/>
-<img class="links_pic" src="images/Webanalyse_undervisning.jpg" alt="kläder" title="Kurs"/>
+<img class="links_pic" src="images/kurser2.jpg" alt="Kurs" title="Kurs"/>
+<img class="links_pic" src="images/Webanalyse_undervisning.jpg" alt="Kurs" title="Kurs"/>
 </section>
 
 <section id="right_column">

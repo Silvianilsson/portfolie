@@ -53,7 +53,7 @@ h1, p, a, button, article
 	float:left;
 	width:40%;
 	height:100%;
-	background-color:#704214;
+	background-color:#C3B091;
 	color:#000;
 }
 
@@ -62,7 +62,7 @@ h1, p, a, button, article
 	float:right;
 	width:60%;
 	height:100%;
-	background-color:#704214;
+	background-color:#C3B091;
 }
 
 #left_column 
@@ -90,7 +90,7 @@ h1, p, a, button, article
 	height:10%;
 	clear:both;
 	text-align:center;
-	background-color:#704214;
+	background-color:#C3B091;
 	line-height:70px
 }
 
@@ -98,7 +98,7 @@ h1, p, a, button, article
 
 body 
 {
-	background-color:#C3B091;
+	background-color:#FFFFFF;
 }
 
 a:link 
@@ -163,11 +163,11 @@ header h1
 /*--------------Index ----------------------*/
 .me_pic
 {
-	width:400px;
+	width:350px;
 	height:auto;
 	position:relative;
-	left:50%;
-	top:90px;
+	left:55%;
+	top:100px;
 	-webkit-mozilla-border-radius: 8px;
      border-radius: 8px; 
 }
