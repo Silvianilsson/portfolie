@@ -29,7 +29,7 @@ body, div, ul, li
 /*----------- Font ----------------*/
 h1, p, a, button, article 
 {
-	font-family:Tahoma, Geneva, sans-serif;
+	font-family:Apple Chancery;
 }
 
 /*----------- Site Map -------------*/
@@ -161,12 +161,23 @@ header h1
 /*--------------Pages ----------------------*/
 
 /*--------------Index ----------------------*/
-.me_pic
+.barnen
 {
-	width:350px;
+	width:280px;
 	height:auto;
 	position:relative;
 	left:55%;
+	top:100px;
+	-webkit-mozilla-border-radius: 8px;
+     border-radius: 8px; 
+}
+
+.me_pic
+{
+	width:150px;
+	height:auto;
+	position:relative;
+	left:60%;
 	top:100px;
 	-webkit-mozilla-border-radius: 8px;
      border-radius: 8px; 
@@ -193,7 +204,7 @@ article.om_mig
 {
 	width:50%;
 	position:relative;
-	top:30%;
+	top:20%;
 	left:35%;
 	font-size:24px;
 }
@@ -202,7 +213,7 @@ article.om_mig
 {
 	position:relative;
 	left:40px;
-	top:5px;
+	top:-250px;
 	font-size:24px;
 }
 
@@ -233,7 +244,7 @@ ul.links_list
 {
     position:relative;
 	left:25%;
-	top:-30px;
+	top:-70px;
 }
 
 
@@ -243,7 +254,7 @@ ul.links_list
 	font-size:20px;
 	width:50%;
 	position:relative;
-	top:150px;
+	top:100px;
 	left:20px;
 }
 
@@ -262,9 +273,41 @@ img.sladd
 .contact-form
 {
 	position:relative;
-	top:-300px;
-	left:30px;
+	top:-380px;
+	left:30px;	
 }
+
+.control-group
+{
+	
+}
+
+.control-label
+{
+	font-family:Apple Chancery;
+}
+
+#name
+{
+	font-family:Apple Chancery;
+}
+
+#email
+{
+	font-family:Apple Chancery;
+}
+
+.btn
+{
+	font-size:13px;
+	border-radius:5px;
+}
+
+.controls
+{
+
+}
+
 
 /*--------------- Foto -------------------*/
 img.foto

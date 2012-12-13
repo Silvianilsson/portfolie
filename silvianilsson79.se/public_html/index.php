@@ -1,6 +1,6 @@
  <?php require_once('./php/header.php'); ?>
 
-<body>
+ <body>
 
   <section id="page_container">
    <section id="head">
@@ -19,7 +19,7 @@
 
 
 <section id="center_column">
- <img class ="me_pic" src="images/jag/lightbox13.jpg" alt="Silvia" title="Silvia"/>
+ <img class ="barnen" src="images/IMG_1070.jpg" alt="Barnen och Silledanke" title="Barnen och Silledanke" border=1;/>
  <section id="datum"><?php require_once('./php/date.php'); ?></section>
  <canvas id="klocka" height="300" width="300"></canvas>
 </section>

@@ -16,20 +16,23 @@
 </section>
 
 <section id="center_column">
-  <p class="contact">Mobilnummer:0709-252835 <a href="mailto:silvia.nilsson@hotmail.com">silvia.nilsson@hotmail.com</a></p>
+  <p class="contact">Mobilnummer:0709-252835</br>
+   <a href="mailto:silvia.nilsson@hotmail.com">silvia.nilsson@hotmail.com</a></p>
   <img class="sladd" src="images/kontakt.jpg" alt="Kontakt" title="Kontakt" height="500 px"img>
 
   <form class="contact-form" method="post" action="">
-  <?php echo form_input('text', 'name', 'Namn:', 'Namn') ?>
-  <?php echo form_input('email', 'email', 'E-post:', 'E-post') ?>
-  <?php echo text_area('message', 'Meddelande', 'Skriv en kommentar här....'); ?>
+    <?php echo form_input('text', 'name', 'Namn:', 'Namn') ?></br>
+    <?php echo form_input('email', 'email', 'E-post:', 'E-post') ?></br>
+    <?php echo text_area('message', 'Meddelande'); ?></br>
+  
+    
 
-  <section class="control-group">
-    <section class="controls">
-      <button type="submit" class="btn">Skicka meddelande</button>
+    <section class="control-group">
+      <section class="controls">
+        <button type="submit" class="btn">Skicka meddelande</button>
+      </section>
     </section>
-  </section>
-</form>
+  </form>
 </section>
 
 <section id="right_column">
