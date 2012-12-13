@@ -1,4 +1,6 @@
- <?php require_once('./php/header.php'); ?>
+
+<?php require_once('./php/header.php'); ?>
+<?php require_once('./php/contact.php'); ?>
 
 <body>
   <section id="page_container">
@@ -15,7 +17,19 @@
 
 <section id="center_column">
   <p class="contact">Mobilnummer:0709-252835 <a href="mailto:silvia.nilsson@hotmail.com">silvia.nilsson@hotmail.com</a></p>
-  <img class="sladd" src="images/kontakt.jpg" alt="Kontakt" title="Kontakt"/ height="500 px"img>
+  <img class="sladd" src="images/kontakt.jpg" alt="Kontakt" title="Kontakt" height="500 px"img>
+
+  <form class="contact-form" method="post" action="">
+  <?php echo form_input('text', 'name', 'Namn:', 'Namn') ?>
+  <?php echo form_input('email', 'email', 'E-post:', 'E-post') ?>
+  <?php echo text_area('message', 'Meddelande', 'Skriv en kommentar här....'); ?>
+
+  <section class="control-group">
+    <section class="controls">
+      <button type="submit" class="btn">Skicka meddelande</button>
+    </section>
+  </section>
+</form>
 </section>
 
 <section id="right_column">

@@ -1,14 +1,16 @@
 <html> 
 
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    	<title>Spel</title>
-    	
-	</head>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Spel</title>
+	<link rel="stylesheet" href="css/sten_sax_pase.css"/>
+</head>
 
 
-	<body>
-		<h1 id="main-title">Sten, Sax, Påse</h1>
+<body>
+	<section class='spel' >
+		<img src="images/spel.jpg"/>
+		<h1 id="main-title">Sten, Påse, Sax</h1>
 		<p>Poäng: <span id='användarens_poäng'>0</span>-<span id='datorns_poäng'>0</span></p>
 		<p><span id='Användarens_val'></span>-<span id='Datorns_val'></span>-<span id='spelresultat'></span></p>
 		<button id='Sten'>Sten</button>
@@ -16,8 +18,8 @@
 		<button id='Påse'>Påse</button>
 		<p id='slutresultat'></p>
 		<button id='börja_om'>Börja om</button>
-
-		<script src="./js/sten_sax_påse.js" type="text/javascript"></script>	
-    </body>
+	</section>
+	<script src="./js/sten_sax_pase.js" type="text/javascript"></script>	
+</body>
 
 </html>

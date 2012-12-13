@@ -8,8 +8,8 @@
   <title>Silvia Nilsson-Nätapplikationsprogrammerare</title>
   
   <link rel="shortcut icon" href="images/S.png">
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="lightbox/css/lightbox.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="lightbox/css/lightbox.css" rel="stylesheet"/>
     
     <script src="js/jquery-1.7.2.min.js"></script>
     <script src="js/lightbox.js"></script>

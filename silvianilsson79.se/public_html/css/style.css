@@ -14,7 +14,7 @@
 	Pages
 		Index
 		Om mig
-		Contact
+		Kontakt
 		Foto
 		Länkar
 ----------------------------------*/
@@ -236,6 +236,7 @@ ul.links_list
 	top:-30px;
 }
 
+
 /*-------------- Kontakt -----------------*/
 .contact
 {
@@ -256,6 +257,13 @@ img.sladd
 	position:relative;
 	top:-50px;
 	left:50%;
+}
+
+.contact-form
+{
+	position:relative;
+	top:-300px;
+	left:30px;
 }
 
 /*--------------- Foto -------------------*/
