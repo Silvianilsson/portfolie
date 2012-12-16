@@ -1,7 +1,7 @@
 <?php
 
   function form_control_wrapper() {
-    return '<div class="control-group">';
+   return '<div class="control-group">';
   }
 
   function form_label($for, $text) {
@@ -35,3 +35,5 @@
 
     return $html;
   }
+
+  
