@@ -188,10 +188,13 @@ header h1
 	position:relative;
 	left:100px;
 	top:-300px;
-	font-size:50px;
-	 
+	font-size:50px; 
 }
 
+.stil
+{
+	font-family:Apple Chancery;
+}
 #klocka
 {
 	position:relative;

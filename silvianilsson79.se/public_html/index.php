@@ -20,7 +20,7 @@
 
 <section id="center_column">
  <img class ="barnen" src="images/IMG_1070.jpg" alt="Barnen och Silledanke" title="Barnen och Silledanke"/>
- <section id="datum"><?php require_once('./php/date.php'); ?></section>
+ <section id="datum" class="stil"><?php require_once('./php/date.php'); ?></section>
  <canvas id="klocka" height="300" width="300"></canvas>
 </section>
 

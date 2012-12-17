@@ -10,11 +10,44 @@
 	font-family:Apple Chancery;
 }
 
+#main-title
+{
+	font-size:35px;
+}
+
+p
+{
+	font-size:28px;
+}
+
 .sten
 {
-	top:15%;
+	top:5%;
 	position:relative;
 	left:30%;
 }
 
+#sten
+{
+	font-family:Apple Chancery;
+	font-size:13px;
+}
+
+#sax
+{
+	font-family:Apple Chancery;
+	font-size:13px;
+}
+
+#påse
+{
+	font-family:Apple Chancery;
+	font-size:13px;
+}
+
+#börja_om
+{
+	font-family:Apple Chancery;
+	font-size:13px;
+}
 

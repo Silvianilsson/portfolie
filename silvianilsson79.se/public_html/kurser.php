@@ -17,7 +17,7 @@
 <section id="center_column">
  <ul class="links_list">
   <li><a href="./innlamningsuppgift.php">Sten, Sax, Påse</a></li>
-  <li><a href="http://www.Bonprix.se">Bonprix</a></li>
+  <li><a href="./spel.php">Rita</a></li>
   <li><a href="http://www.Love2shop.se">Love2shop</a></li>
   <li><a href="http://www.Modehus.nu">Modehus</a></li>
   <li><a href="http://www.Bubbleroom.se">Bubbleroom</a></li>

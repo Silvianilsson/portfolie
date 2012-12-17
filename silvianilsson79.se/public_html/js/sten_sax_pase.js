@@ -73,7 +73,7 @@ function Spela(Användarens_val)
 	var slutresultat = document.getElementById('slutresultat');
 	if (användarens_poäng == 3)
 	{
-		slutresultat.innerHTML = "Grattis! du vann över datorn med " + (användarens_poäng - datorns_poäng)+ " poäng";
+		slutresultat.innerHTML = "Grattis! Du vann över datorn med " + (användarens_poäng - datorns_poäng)+ " poäng";
 		document.getElementById('Sten').disabled=true;
 		document.getElementById('Sax').disabled=true;
 		document.getElementById('Påse').disabled=true;

@@ -23,7 +23,7 @@
     <a href="./images/big/lightbox06.jpg" rel="lightbox[roadtrip]" title="Marcus på scen i Turkiet"><img class="foto1" src="./images/mini/lightbox06.jpg" alt="Turkiet" title="Turkiet"></img></a>
     <a href="./images/big/lightbox07.jpg" rel="lightbox[roadtrip]" title="Eric Saade på besök i Växjö"><img class="foto2" src="./images/mini/lightbox07.jpg" alt="EricSaade" title="EricSaade"></img></a>
     <a href="./images/big/lightbox08.jpg" rel="lightbox[roadtrip]" title="Silledanke"><img class="foto2" src="./images/mini/lightbox08.jpg" alt="Silledanke" title="Silledanke"></img></a>
-    <a href="./images/big/lightbox09.jpg" rel="lightbox[roadtrip]" title="Besökte Universium"><img class="foto2" src="./images/mini/lightbox09.jpg" alt="Universeum" title="Universium"></img></a>
+    <a href="./images/big/lightbox09.jpg" rel="lightbox[roadtrip]" title="Besökte Universium i Göteborg"><img class="foto2" src="./images/mini/lightbox09.jpg" alt="Universeum" title="Universium"></img></a>
     <a href="./images/big/lightbox10.jpg" rel="lightbox[roadtrip]" title="Universium"><img class="foto3" src="./images/mini/lightbox10.jpg" alt="Universeum" title="Universeum"></img></a>
     <a href="./images/big/lightbox11.jpg" rel="lightbox[roadtrip]" title="Ska åka helikopter"><img class="foto3" src="./images/mini/lightbox11.jpg" alt="Karl-oskar" title="Karl-oskar"></img></a>
     <a href="./images/big/lightbox12.jpg" rel="lightbox[roadtrip]" title="Blomma"><img class="foto3" src="./images/mini/lightbox12.jpg" alt="Blomma" title="Blomma"></img></a>

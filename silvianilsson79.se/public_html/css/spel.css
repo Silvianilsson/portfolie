@@ -1,0 +1,14 @@
+#canvas
+{
+	width:940px;
+	height:800px;
+	margin:100px auto;
+	position:relative;
+}
+
+#spel1
+{
+	position:relative;
+	left: 100%;
+	top: 400%;
+}
