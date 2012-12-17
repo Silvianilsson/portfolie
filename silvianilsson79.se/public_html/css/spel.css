@@ -1,4 +1,4 @@
-#canvas
+/*#canvas
 {
 	width:940px;
 	height:800px;
@@ -12,3 +12,221 @@
 	left: 100%;
 	top: 400%;
 }
+
+body 
+{
+	background-image: url(../bilder/bakgrund.gif);
+	margin-left: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}*/
+
+<style type="text/css">
+.alignLeft { float:left; margin-right: 1em; }
+.alignRight { float:right; margin-left: 1em; }
+body {
+	font-family:Apple Chancery;
+	margin: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	background-color:#FFFFFF;
+}
+.barnskoj 
+{
+	font-family:Apple Chancery;
+	font-size: 12px;
+	padding-left: 10px;
+	background-color:#C3B091;
+	
+}
+.h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	padding-left: 0px;
+    margin-top: 8px;
+	margin-bottom: 0px;
+}
+.h2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding-left: 0px;
+    margin-top: 8px;
+	margin-bottom: 0px;
+}
+.h3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding-left: 0px;
+    margin-top: 8px;
+	margin-bottom: 0px;
+}
+.h4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding-left: 0px;
+}
+.h1Pyssel {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	padding-left: 0px;
+    margin-top: 8px;
+	margin-bottom: 5px;
+	color: #000000;
+}	
+.h2Pyssel {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	padding-left: 0px;
+    margin-top: 8px;
+	margin-bottom: 5px;
+	color: #000000;
+}
+.ContainerPyssel {
+     width: auto;
+}
+.IntroPyssel {
+	clear: both;
+	float: left;
+	width: 600px;
+	height: auto;
+	margin: 0px;
+	background-color: white;
+	padding-top: 10px;
+}
+.Bild2 {
+	float: left;
+	width: 160px;
+	height: 220px;
+	margin-left: 30px;
+	margin-top: 10px;
+	padding-left: 8px;
+	padding-top: 8px;
+	border:4px solid;
+	border-radius:12px;
+	-moz-border-radius:12px; /* Firefox 3.6 and earlier */
+	border-color:#0099cc;
+	background-color:#c73498;
+	color: #ffffff;
+}
+.FlerPyssel {
+	float: left;
+	width: 160px;
+	height: 100px;
+	margin-left: 30px;
+	margin-top: 10px;
+	padding-left: 8px;
+	padding-top: 8px;
+	border:4px solid;
+	border-radius:12px;
+	-moz-border-radius:12px; /* Firefox 3.6 and earlier */
+	border-color:#0099cc;
+	background-color:#efefef;
+	color: #0099cc;
+	
+}
+.Annons160 {
+	float: left;
+	width: 170px;
+	height: 600px;
+	margin-left: 34px;
+	margin-top: 10px;
+	padding-left: 8px;
+	padding-top: 8px;
+}
+.Instruktioner {
+	float: left;
+	height: auto;
+}
+.container {
+     width: auto;
+}
+.maincontent {
+	clear: both;
+	float: left;
+	width: auto;
+	margin: 0px;
+	background-color: white;
+}
+.maincontentPyssel {
+	clear: both;
+	float: left;
+	width: 600px;
+	margin: 0px;
+	background-color: white;
+}
+.flerspel {
+	float: left;
+	padding-left: 10px;
+}
+.rubrik {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+.rubrik-fet {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; }
+.justbarnskoj {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.pysselgra{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+ 	color: #666666;
+}
+.containerindex {
+     width: auto;
+}
+.maincontent1 {
+	float: left;
+	width: 250px;
+	margin-right: 10px;
+	background-color: white;
+}
+.maincontent2 {
+	
+	float: left;
+	width: auto;
+	width: 250px;
+	margin-right: 10px;
+	margin-left: 10px;
+	background-color: white;
+}
+.maincontent3 {
+	
+	float: left;
+	width: auto;
+	width: 250px;
+	margin-right: 10px;
+	margin-left: 10px;
+	background-color: white;
+}
+.indexleft {
+	clear: both;
+	float: left;
+	width: auto;
+	width: 500px;
+	background-color: white;
+}
+.indexright {
+	float: right;
+	width: 400px;
+	margin-left: 50px;
+	background-color: white;
+}
+.adstop {
+	clear: both; 
+	width: 728px; 
+	height: 90px;
+}
+.adsbottom {
+	clear: both; 
+	width: 728px; 
+	height: 120px;
+}
+
+</style>
+
+
+Typ
+MIME-typ	text/css
+Resurstyp	Stilmall
