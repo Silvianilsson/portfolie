@@ -12,7 +12,3 @@ define('DB_HOST', 'localhost');
 
 date_default_timezone_set('Europe/Stockholm');
 ?>
-
-
-
-

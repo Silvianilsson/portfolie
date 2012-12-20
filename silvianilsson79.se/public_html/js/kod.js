@@ -73,13 +73,13 @@ function update()
   circle(80, 150, 20, "yellow");
   */
 
-   if(mouseLeftDown)
+  if(mouseLeftDown)
   {
-    circle(mouseX, mouseY, 10, choosen_color);
+    circle(mouseX, mouseY, 8, choosen_color);
   }
 
   if(mouseRightDown)
   {
-    circle(mouseX, mouseY, 10, white);
+    circle(mouseX, mouseY, 8, white);
   }
 }

@@ -9,12 +9,12 @@ $items = $db->getItems();
 
 if ($items) 
 {
-    echo 'hittade den <br>';
-    foreach ($items as $item ) 
-    {
-    	echo "id" . $item->id . 'title' . $item->title . '<br>';
-    }
+	echo 'hittade den <br>';
+	foreach ($items as $item ) 
+	{
+		echo "id" . $item->id . 'title' . $item->title . '<br>';
+	}
 }
 
- else  echo $items[2]->title; 
- ?>
+else  echo $items[2]->title; 
+?>

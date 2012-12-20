@@ -18,44 +18,51 @@ class Db
 		}
 	}
 
-private $item_sql = "select id, title from portfolio_items";
+  private $item_sql = "select * from portfolio_items";
 
-    public function getItems() {
-      $sth = $this->dbh->query($this->item_sql);
-      $sth->setFetchMode(PDO::FETCH_CLASS, 'item');
+  public function getItems() 
+  {
+    $sth = $this->dbh->query($this->item_sql);
+    $sth->setFetchMode(PDO::FETCH_CLASS, 'item');
 
-      $objects = array();
+    $objects = array();
 
-      while($obj = $sth->fetch()) {
-        $objects[] = $obj;
-      }
-
-     
-      return $objects;
+    while($obj = $sth->fetch()) 
+    {
+      $objects[] = $obj;
     }
 
-    public function getItem($id) {
-      $sql = $this->item_sql." where items.id = :id";
-      $sth = $this->dbh->prepare($sql);
-      $sth->bindParam(':id', $id, PDO::PARAM_INT);
-      $sth->setFetchMode(PDO::FETCH_CLASS, 'item');
-      $sth->execute();
+    
+    return $objects;
+  }
 
-      $objects = array();
+  public function getItem($id) 
+  {
+    $sql = $this->item_sql." where id = :id";
+    $sth = $this->dbh->prepare($sql);
+    $sth->bindParam(':id', $id, PDO::PARAM_INT);
+    $sth->setFetchMode(PDO::FETCH_CLASS, 'item');
+    $sth->execute();
 
-      while($obj = $sth->fetch()) {
-        $objects[] = $obj;
-      }
+    $objects = array();
 
-      if (count($objects) > 0) {
-        return $objects[0];
-      } else {
-        return null;
-      }
+    while($obj = $sth->fetch()) 
+    {
+      $objects[] = $obj;
     }
+
+    if (count($objects) > 0) 
+    {
+      return $objects[0];
+    }
+    else 
+    {
+      return null;
+    }
+  }
 
 }
 
 
-      
+
 ?>

@@ -3,15 +3,15 @@
 <body>
   
     <section id="page_container">
-     <section id="head">
-       <section id="head-left">
+       <section id="head">
+         <section id="head-left">
           <header>
-             <a href="index.php"><h1>Silvia Nilsson</h1></a>
-         </header>
-     </section>
-     <section id="head-right">
-        <?php require_once('./php/meny.php'); ?>
-    </section>
+           <a href="index.php"><h1>Silvia Nilsson</h1></a>
+       </header>
+   </section>
+   <section id="head-right">
+    <?php require_once('./php/meny.php'); ?>
+</section>
 </section>
 
 <section id="center_column"> 
@@ -32,7 +32,7 @@
 </section>
 
 <section id="right_column">
-   
+ 
 </section>
 
 
