@@ -19,6 +19,7 @@
 		<button id='Påse'>Påse</button>
 		<p id='slutresultat'></p>
 		<button id='börja_om'>Börja om</button>
+		<p><a id='tillbaka'href="/visa.php?id=1">&laquo; Tillbaka</a></p>
 	</section>
 	</section>
 	<script src="./js/sten_sax_pase.js" type="text/javascript"></script>	

@@ -41,7 +41,7 @@ $page_title = $item->title;
 					<img src="images/spel.jpg">
 				</a>
 				<p><?php echo nl2br($item->title) ?></p>
-				<p>Kategori: <strong><?php echo $item->title?></strong></p>
+				<p>Beskrivning: <strong><?php echo $item->title?></strong></p>
 			</div>
 
 			<p><a href="/kurser.php">&laquo; Tillbaka</a></p>

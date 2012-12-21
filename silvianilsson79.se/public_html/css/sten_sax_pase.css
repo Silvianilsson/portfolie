@@ -22,7 +22,7 @@ p
 
 .sten
 {
-	top:5%;
+	top:2%;
 	position:relative;
 	left:30%;
 }
@@ -53,5 +53,12 @@ p
 	font-family:Apple Chancery;
 	font-size:13px;
 	cursor:pointer;
+}
+
+#tillbaka
+{
+
+	font-size:20;
+	color:black;
 }
 

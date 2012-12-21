@@ -16,7 +16,7 @@
 
 <section id="center_column">
  <ul class="links_list">
-  <li><a href="./innlamningsuppgift.php">Sten, Sax, Påse</a></li>
+  <li><a href="./visa.php?id=1">Sten, Sax, Påse</a></li>
   <li><a href="./spel.php">Rita</a></li>
   <li><a href="http://www.Love2shop.se">Love2shop</a></li>
   <li><a href="http://www.Modehus.nu">Modehus</a></li>
