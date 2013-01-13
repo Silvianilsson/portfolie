@@ -27,7 +27,7 @@ body, div, ul, li
 }
 
 /*----------- Font ----------------*/
-h1, p, a, button, article 
+h1, p, a, button, article, th, td, input
 {
 	font-family:Apple Chancery;
 }

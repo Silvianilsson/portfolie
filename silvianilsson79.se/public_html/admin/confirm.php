@@ -10,7 +10,7 @@ $title = $_GET['title'];
 
 ?>
 
-<?php require_once('../php/header.php'); ?>
+<?php require_once('header_admin.php'); ?>
 
 <section>
 <h1>Ta bort</h1><a href='loggut.php'>Logga ut</a>

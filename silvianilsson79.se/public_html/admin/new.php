@@ -6,7 +6,7 @@ require_once('../classes/skydd.php');
 
 ?>
 
-<?php require_once('../php/header.php'); ?>
+<?php require_once('header_admin.php'); ?>
 
 <h1>Ny Referens</h1>
 <form action="create.php" method="post">
