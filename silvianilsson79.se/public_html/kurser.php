@@ -1,5 +1,32 @@
 <?php require_once('./php/header.php'); ?>
 
+<?php
+
+require_once('./classes/config.php');
+require_once('./classes/db.php');
+
+
+$db = new Db();
+
+$items = $db->getItems();
+
+
+function portfolio_item($item) 
+{
+
+      $html = '<li class="portfolio-item">';
+      $html .= '<a href="/visa.php?id='.$item->id.'">';
+      $html .= $item->title;
+      $html .= '</a>';
+      $html .= '</li>';
+      
+      return $html;
+      
+  }
+?>
+
+
+
 <body>
   
   <section id="page_container">
@@ -16,11 +43,9 @@
 
 <section id="center_column">
  <ul class="links_list">
-  <li><a href="./visa.php?id=1">Sten, Sax, Påse</a></li>
-  <li><a href="./spel.php">Rita</a></li>
-  <li><a href="http://www.Love2shop.se">Love2shop</a></li>
-  <li><a href="http://www.Modehus.nu">Modehus</a></li>
-  <li><a href="http://www.Bubbleroom.se">Bubbleroom</a></li>
+  <?php foreach ($items as $item) : ?>
+      <?php echo portfolio_item($item); ?>
+    <?php endforeach ?>
 </ul>
 
 <img class="links_pic" src="images/kurser2.jpg" alt="Kurs" title="Kurs"/>

@@ -61,6 +61,48 @@ class Db
     }
   }
 
+  public function updateItem($item) 
+  {
+    $data = array($item->title, $item->url, $item->description, $item->category, $item->bild, $item->id);
+    $sth = $this->dbh->prepare("update portfolio_items set title = ?, url = ?, description = ?, category = ?, bild = ? where id = ?");
+    if ($sth->execute($data)) 
+    {
+      return true;
+    } 
+    else 
+    {
+      return false;
+    }
+  }
+
+  public function deleteItem($id) 
+  {
+    $data = array($id);
+    $sth = $this->dbh->prepare("delete FROM portfolio_items WHERE id = ?");
+    if ($sth->execute($data)) 
+    {
+      return true;
+    } 
+    else 
+    {
+      return false;
+    }
+  }
+
+  public function createItem($item) 
+  {
+    $data = array($item->title, $item->url, $item->description, $item->category, $item->bild);
+    $sth = $this->dbh->prepare("insert INTO portfolio_items (title, url, description, category, bild) VALUES (?, ?, ?, ?, ?)");
+    if ($sth->execute($data)) 
+    {
+      return true;
+    } 
+    else 
+    {
+      return false;
+    }
+  }
+
 }
 
 

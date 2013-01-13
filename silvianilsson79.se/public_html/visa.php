@@ -38,10 +38,10 @@ $page_title = $item->title;
 		<section>
 			<div>
 				<a href="<?php echo $item->url ?>">
-					<img src="images/spel.jpg">
+					<img src="<?php echo $item->bild ?>">
 				</a>
 				<p><?php echo nl2br($item->title) ?></p>
-				<p>Beskrivning: <strong><?php echo $item->title?></strong></p>
+				<p>Beskrivning: <strong><?php echo $item->description?></strong></p>
 			</div>
 
 			<p><a href="/kurser.php">&laquo; Tillbaka</a></p>

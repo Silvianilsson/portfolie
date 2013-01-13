@@ -1,14 +1,11 @@
+/*-------- Rita --------*/
+
 #canvas
 {
 	width:940px;
 	height:800px;
 	margin:100px auto;
 	position:relative;
-}
-
-.mallar
-{
-	font-size: 20px;
 }
 
 

@@ -94,6 +94,14 @@ h1, p, a, button, article
 	line-height:70px
 }
 
+#admin_link
+{
+	font-size:18px;
+	top:-58px;
+	position:relative;
+	
+}
+
 /*----------- Site Styles -----------------*/
 
 body 
@@ -293,11 +301,19 @@ img.sladd
 #name
 {
 	font-family:Apple Chancery;
+	font-size:13px;
 }
 
 #email
 {
 	font-family:Apple Chancery;
+	font-size:13px;
+}
+
+#message
+{
+	font-family:Apple Chancery;
+	font-size:13px;
 }
 
 .btn
