@@ -23,7 +23,8 @@ $title = $_GET['title'];
 		<form action="/admin/delete.php" method="post">
 			<input type="hidden" name="id" value="<?php echo $id ?>">
 			<p>Är du säker på att du vill ta bort <br><?php echo $title ?></p>
-			<button type="submit" class="btn">Ta bort</button><a href="/admin" >Avbryt</a>
+			<button type="submit" class="btn">Ta bort</button>
+			<a href="/admin" class="cancel-link">Avbryt</a>
 		</form>
 
 	</section>

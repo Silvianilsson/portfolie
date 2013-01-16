@@ -23,8 +23,7 @@
     <section id="right_column">         	
     </section>
 
-  <?php require_once('./php/footer.php'); ?>
-
+    <?php require_once('./php/footer.php'); ?>
   </section>
 
   <script src="js/main.js"></script>    

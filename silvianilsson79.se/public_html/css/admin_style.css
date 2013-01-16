@@ -25,8 +25,12 @@
 	top:120px;
 	font-size:28px;
 }
-.img
+
+a.cancel-link 
 {
-	background-size: 400%;
+	border-radius:5px ;
+	background: #ccc;
+	font-size:13px;
 }
+
 

@@ -39,6 +39,8 @@ $page_title = $item->title;
 			<div>
 				<a href="<?php echo $item->url ?>">
 					<img src="<?php echo $item->bild ?>">
+					<img src="<?php echo $item->bild_2 ?>">
+					<img src="<?php echo $item->bild_3 ?>">
 				</a>
 				<p><?php echo nl2br($item->title) ?></p>
 				<p>Beskrivning: <strong><?php echo $item->description?></strong></p>
@@ -47,3 +49,8 @@ $page_title = $item->title;
 			<p><a href="/kurser.php">&laquo; Tillbaka</a></p>
 		</section>
 		<?php require_once('php/footer.php'); ?>
+	</section>
+
+</body>
+
+
