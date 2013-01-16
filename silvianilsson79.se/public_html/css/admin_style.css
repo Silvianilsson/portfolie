@@ -1,9 +1,32 @@
 /*-------- Admin --------*/
 
-#referenser
+#head-left
 {
-	background-color: red;
+	font-size:38px;
+	position:relative;
 }
 
+.btn
+{
+	cursor:pointer;
+}
 
+#head-right
+{
+	font-size:20px;
+	position:relative;
+
+}
+
+#center_column
+{
+	position:relative;
+	left:40px;
+	top:120px;
+	font-size:28px;
+}
+.img
+{
+	background-size: 400%;
+}
 
