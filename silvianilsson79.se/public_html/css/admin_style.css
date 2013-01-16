@@ -2,7 +2,7 @@
 
 #head-left
 {
-	font-size:38px;
+	font-size:380px;
 	position:relative;
 }
 
@@ -31,6 +31,7 @@ a.cancel-link
 	border-radius:5px ;
 	background: #ccc;
 	font-size:13px;
+	padding: 100px;
 }
 
 
