@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
   <meta name="keywords" content="programerare, växjö, yrkeshögskolan, nätapplikation, html"/>
   <meta name="description" content="Innehåller sidor om mig!"/>
   <meta name="author" content="Silvia Nilsson"/> 
