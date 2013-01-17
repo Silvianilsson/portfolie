@@ -15,7 +15,7 @@
 			<a>Lösenord:<input type="password" name="password" value=""></a></br>
 			<input type="submit" class="btn" value="Logga in"> 
 		</form>
-
+		<p><a href="/index.php">&laquo; Tillbaka</a></p>
 	</section>
 	<?php require_once('footer_admin.php'); ?>
 </section>

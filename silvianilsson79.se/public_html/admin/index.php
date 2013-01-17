@@ -33,6 +33,7 @@ $items = $db->getItems();
 					<td><?php echo $item->category?></td>
 					<td>
 						<a href="/admin/edit.php?id=<?php echo $item->id ?>">Redigera</a> |
+						<a href="/admin/new.php?id=<?php echo $item->id ?>">Lägg till</a> |
 						<a href="/admin/confirm.php?id=<?php echo $item->id ?>&title=<?php echo $item->title ?>">Ta bort</a>
 					</td>
 				</tr>

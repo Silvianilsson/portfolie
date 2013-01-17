@@ -32,7 +32,6 @@ class Db
       $objects[] = $obj;
     }
 
-    
     return $objects;
   }
 

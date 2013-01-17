@@ -2,7 +2,7 @@
 
 #head-left
 {
-	font-size:380px;
+	font-size:38px;
 	position:relative;
 }
 
@@ -22,16 +22,21 @@
 {
 	position:relative;
 	left:40px;
-	top:120px;
-	font-size:28px;
+	top:80px;
+	font-size:25px;
 }
 
 a.cancel-link 
 {
 	border-radius:5px ;
-	background: #ccc;
+	background: #C0C0C0;
 	font-size:13px;
-	padding: 100px;
+	padding: 5px 10px;
+}
+.login
+{
+	left:40px;
+	top:80px;
 }
 
 

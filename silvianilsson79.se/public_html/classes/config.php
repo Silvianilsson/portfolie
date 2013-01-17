@@ -5,10 +5,10 @@ ini_set('display_errors', '1');
 
 define('ROOT_PATH', dirname(__FILE__));
 
-define('DB_USER', '161897_cj83925');
-define('DB_PASS', 'gullettt');
-define('DB_NAME', '161897-portfolie');
-define('DB_HOST', 'portfolie-161897.mysql.binero.se');
+define('DB_USER', 'root');
+define('DB_PASS', 'root');
+define('DB_NAME', 'portfolio');
+define('DB_HOST', 'localhost');
 
 define('USER', 'admin');
 define('PASS', 'mayoren&&&');

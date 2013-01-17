@@ -34,6 +34,7 @@ $item = $db->getItem($id);
 			<a>bild: <input type="text" name="bild" value="<?php echo $item->bild ?>"></a><br>
 			<a><input type="submit" class="btn" value="Uppdatera"></a>
 		</form>
+		<p><a href="/admin/index.php">&laquo; Tillbaka</a></p>
 	</section>
 	<?php require_once('footer_admin.php'); ?>
 </section>
