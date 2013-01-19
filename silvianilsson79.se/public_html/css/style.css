@@ -201,7 +201,7 @@ header h1
 
 .stil
 {
-	font-family:Apple Chancery;
+	font-family: 'Courgette', cursive;
 }
 #klocka
 {
@@ -295,24 +295,24 @@ img.sladd
 
 .control-label
 {
-	font-family:Apple Chancery;
+	font-family: 'Courgette', cursive;
 }
 
 #name
 {
-	font-family:Apple Chancery;
+	font-family: 'Courgette', cursive;
 	font-size:13px;
 }
 
 #email
 {
-	font-family:Apple Chancery;
+	font-family: 'Courgette', cursive;
 	font-size:13px;
 }
 
 #message
 {
-	font-family:Apple Chancery;
+	font-family: 'Courgette', cursive;
 	font-size:13px;
 }
 

@@ -4,6 +4,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
 define('ROOT_PATH', dirname(__FILE__));
+define('UPLOAD_PATH', ROOT_PATH.'/images/upload/');
 
 define('DB_USER', 'root');
 define('DB_PASS', 'root');

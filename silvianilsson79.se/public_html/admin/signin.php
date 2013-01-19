@@ -1,6 +1,6 @@
 <?php
 
-require_once('../classes/config.php');
+require_once('../config.php');
 
 if (isset($_POST['username']))
 {   
@@ -9,7 +9,6 @@ if (isset($_POST['username']))
 
 	if ($username == USER && $password == PASS)
 	{
-		
 		$_SESSION['is_logged_in'] = true;
 		header("Location: /admin/index.php");
 		

@@ -1,4 +1,4 @@
-<?php require_once('../classes/config.php'); ?>
+<?php require_once('../config.php'); ?>
 
 
 

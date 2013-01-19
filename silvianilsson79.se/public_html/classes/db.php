@@ -1,6 +1,8 @@
 <?php
 
-require_once(ROOT_PATH.'/item.php');
+require_once(ROOT_PATH.'/classes/item.php');
+require_once(ROOT_PATH.'/classes/category.php');
+
 
 class Db 
 {
@@ -19,6 +21,7 @@ class Db
 	}
 
   private $item_sql = "select * from portfolio_items";
+  private $category_sql = "select * from Categories";
 
   public function getItems() 
   {
@@ -62,8 +65,8 @@ class Db
 
   public function updateItem($item) 
   {
-    $data = array($item->title, $item->url, $item->description, $item->category, $item->bild, $item->id);
-    $sth = $this->dbh->prepare("update portfolio_items set title = ?, url = ?, description = ?, category = ?, bild = ? where id = ?");
+    $data = array($item->title, $item->url, $item->description, $item->category_id, $item->bild, $item->id);
+    $sth = $this->dbh->prepare("update portfolio_items set title = ?, url = ?, description = ?, category_id = ?, bild = ? where id = ?");
     if ($sth->execute($data)) 
     {
       return true;
@@ -91,7 +94,90 @@ class Db
   public function createItem($item) 
   {
     $data = array($item->title, $item->url, $item->description, $item->category, $item->bild);
-    $sth = $this->dbh->prepare("insert INTO portfolio_items (title, url, description, category, bild) VALUES (?, ?, ?, ?, ?)");
+    $sth = $this->dbh->prepare("insert INTO portfolio_items (title, url, description, category_id, bild) VALUES (?, ?, ?, ?, ?)");
+    if ($sth->execute($data)) 
+    {
+      return true;
+    } 
+    else 
+    {
+      return false;
+    }
+  }
+
+ public function createCategory($category) 
+  {
+    $data = array($category->name);
+    $sth = $this->dbh->prepare("insert INTO Categories (name) VALUES (?)");
+    if ($sth->execute($data)) 
+    {
+      return true;
+    } 
+    else 
+    {
+      return false;
+    }
+  }
+
+  public function getCategories() 
+  {
+    $sth = $this->dbh->query("select * FROM Categories");
+    $sth->setFetchMode(PDO::FETCH_CLASS, 'category');
+
+    $objects = array();
+
+    while($obj = $sth->fetch()) 
+    {
+      $objects[] = $obj;
+    }
+
+    return $objects;
+  }
+
+
+  public function getCategory($id) 
+  {
+    $sql = $this->category_sql." where id = :id";
+    $sth = $this->dbh->prepare($sql);
+    $sth->bindParam(':id', $id, PDO::PARAM_INT);
+    $sth->setFetchMode(PDO::FETCH_CLASS, 'category');
+    $sth->execute();
+
+    $objects = array();
+
+    while($obj = $sth->fetch()) 
+    {
+      $objects[] = $obj;
+    }
+
+    if (count($objects) > 0) 
+    {
+      return $objects[0];
+    }
+    else 
+    {
+      return null;
+    }
+  }
+
+  public function updateCategory($category) 
+  {
+    $data = array($category->name, $category->id);
+    $sth = $this->dbh->prepare("update Categories set name = ? where id = ?");
+    if ($sth->execute($data)) 
+    {
+      return true;
+    } 
+    else 
+    {
+      return false;
+    }
+  }
+
+  public function deleteCategory($id) 
+  {
+    $data = array($id);
+    $sth = $this->dbh->prepare("delete FROM Categories WHERE id = ?");
     if ($sth->execute($data)) 
     {
       return true;
@@ -103,7 +189,5 @@ class Db
   }
 
 }
-
-
 
 ?>
