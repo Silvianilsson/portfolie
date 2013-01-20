@@ -3,10 +3,13 @@
 require_once('../../config.php');
 require_once(ROOT_PATH.'/classes/db.php');
 require_once(ROOT_PATH.'/classes/skydd.php');
+require_once(ROOT_PATH.'/classes/help.php');
 
 $db = new Db();
 
 $item = new Item();
+
+$categories = $db->getCategories(); 
 
 ?>
 
@@ -24,10 +27,7 @@ $item = new Item();
 			<a>title: <input type="text" name="title" value=""></a><br>
 			<a>url: <input type="text" name="url" value=""></a><br>
 			<a>description: <input type="text" name="description" value=""></a><br>
-			<a>category: <select>
-							<option value="<?php echo $categories->id ?>"></option>
-							<option value="<?php echo $categories->name ?>"></option>
-						 </select> </a><br>
+			<a>kategori: <?php echo select('category_id', 'Kategori: ', $categories)?></a><br>   
 			<a>bild: <input type="text" name="bild" value=""></a><br>
 			<a><input type="submit" class='btn' value="Lägg till"></a>
 		</form>

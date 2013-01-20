@@ -20,17 +20,16 @@ class Db
 		}
 	}
 
-  private $item_sql = "select * from portfolio_items";
+  private $item_sql = "select portfolio_items.id, portfolio_items.title, portfolio_items.url, 
+            portfolio_items.category_id,portfolio_items.bild,portfolio_items.bild_2,portfolio_items.bild_3,
+            portfolio_items.description,Categories.name as category_name
+            from portfolio_items inner join Categories on portfolio_items.category_id =Categories.id";
+
   private $category_sql = "select * from Categories";
 
   public function getItems() 
   {
-    $sql = "select portfolio_items.id, portfolio_items.title, portfolio_items.url, 
-            portfolio_items.category_id,portfolio_items.bild,
-            portfolio_items.description,Categories.name as category_name
-            from portfolio_items inner join Categories on portfolio_items.category_id =Categories.id";
-            
-    $sth = $this->dbh->query($sql);
+    $sth = $this->dbh->query($this->item_sql);
     $sth->setFetchMode(PDO::FETCH_CLASS, 'item');
 
     $objects = array();
@@ -45,7 +44,7 @@ class Db
 
   public function getItem($id) 
   {
-    $sql = $this->item_sql." where id = :id";
+    $sql = $this->item_sql." where portfolio_items.id = :id";
     $sth = $this->dbh->prepare($sql);
     $sth->bindParam(':id', $id, PDO::PARAM_INT);
     $sth->setFetchMode(PDO::FETCH_CLASS, 'item');
@@ -98,7 +97,7 @@ class Db
 
   public function createItem($item) 
   {
-    $data = array($item->title, $item->url, $item->description, $item->category, $item->bild);
+    $data = array($item->title, $item->url, $item->description, $item->category_id, $item->bild);
     $sth = $this->dbh->prepare("insert INTO portfolio_items (title, url, description, category_id, bild) VALUES (?, ?, ?, ?, ?)");
     if ($sth->execute($data)) 
     {
