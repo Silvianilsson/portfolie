@@ -28,9 +28,10 @@ $categories = $db->getCategories();
 			<a>url: <input type="text" name="url" value=""></a><br>
 			<a>description: <input type="text" name="description" value=""></a><br>
 			<a>kategori: <?php echo select('category_id', 'Kategori: ', $categories)?></a><br>   
-			<a>bild: <input type="text" name="bild" value=""></a><br>
+			<a><input type="hidden" name="bild" value=""></a><br>
 			<a><input type="submit" class='btn' value="Lägg till"></a>
 		</form>
+
 		<p><a href="/admin/items/index.php">&laquo; Tillbaka</a></p>
 	</section>
 	<?php require_once('../footer_admin.php'); ?>	

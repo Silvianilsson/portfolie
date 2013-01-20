@@ -9,7 +9,6 @@ if (isset($_FILES['thumbnail']))
 {
 	$tmp_name=$_FILES['thumbnail']['tmp_name'];
 	$filename=$_FILES['thumbnail']['name'];
-	echo 'uploading '.$filename;
 	move_uploaded_file($tmp_name, UPLOAD_PATH.$filename);
 	header("Location: /admin/items/edit.php?id=".$id."&bild=".$filename);
 }

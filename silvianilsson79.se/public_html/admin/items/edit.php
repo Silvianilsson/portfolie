@@ -35,6 +35,7 @@ if (isset($_GET['bild']))
 	</section>
 
 	<section id="center_column">
+		<img class ="thumbnail" src="../../<?php echo RELATIVE_UPLOAD_PATH.$item->bild ?>" />
 
 		<form action="update.php" method="post" enctype="multipart/form-data">
 			<a><input type="hidden" name="id" value="<?php echo $item->id ?>"></a></br>
