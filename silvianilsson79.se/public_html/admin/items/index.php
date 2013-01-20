@@ -31,8 +31,8 @@ $items = $db->getItems();
 			<tbody>
 				<?php foreach($items as $item) : ?>
 				<tr>
-					<td><a href="<?php echo '../' . $item->url ?>"><?php echo $item->title ?></a></td>
-					<td><?php echo $item->category_id?></td>
+					<td><a href="<?php echo '../../' . $item->url ?>"><?php echo $item->title ?></a></td>
+					<td><?php echo $item->category_name?></td>
 					<td>
 						<a href="/admin/items/edit.php?id=<?php echo $item->id ?>">Redigera</a> |
 						<a href="/admin/items/confirm.php?id=<?php echo $item->id ?>&title=<?php echo $item->title ?>">Ta bort</a>

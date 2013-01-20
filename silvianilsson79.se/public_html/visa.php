@@ -38,9 +38,9 @@ $page_title = $item->title;
 		<section>
 			<div>
 				<a href="<?php echo $item->url ?>">
-					<img src="<?php echo $item->bild ?>">
-					<img src="<?php echo $item->bild_2 ?>">
-					<img src="<?php echo $item->bild_3 ?>">
+					<img src="<?php echo RELATIVE_UPLOAD_PATH.$item->bild ?>">
+					<img src="<?php echo RELATIVE_UPLOAD_PATH.$item->bild_2 ?>">
+					<img src="<?php echo RELATIVE_UPLOAD_PATH.$item->bild_3 ?>">
 				</a>
 				<p><?php echo nl2br($item->title) ?></p>
 				<p>Beskrivning: <strong><?php echo $item->description?></strong></p>

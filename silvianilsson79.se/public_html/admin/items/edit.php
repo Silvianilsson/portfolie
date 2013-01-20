@@ -10,9 +10,15 @@ if (isset($_GET['id']))
 	$id = $_GET['id'];
 }
 
+
 $db = new Db();
 
 $item = $db->getItem($id);
+
+if (isset($_GET['bild'])) 
+{
+	$item->bild = $_GET['bild'];
+}
 
 ?>
 <?php require_once('../header_admin.php'); ?>
@@ -30,15 +36,22 @@ $item = $db->getItem($id);
 			<a>title: <input type="text" name="title" value="<?php echo $item->title ?>"></a></br>
 			<a>url: <input type="text" name="url" value="<?php echo $item->url ?>"></a><br>
 			<a>description: <input type="text" name="description" value="<?php echo $item->description ?>"></a><br>
-			<a>kategori <input type="text" name="category_id" value="1"></a>
-			<a>category: <select>
+		    <a>kategori <input type="text" name="category_id" value="<?php echo $item->category_id ?>"></a>
+			<a>kategory: <select>
 							<option value="category_id">1</option>
 							<option value="category_id">2</option>
 						 </select> </a><br>
 			<a>bild: <input type="text" name="bild" value="<?php echo $item->bild ?>"></a><br>
-			<a>ladda upp bild: <input type="file" name="thumbnail" value=""></a><br>
 			<a><input type="submit" class="btn" value="Uppdatera"></a>
+		</form><br>
+
+		<form action="upload.php" method="post" enctype="multipart/form-data">
+			<input name="id" type="hidden" value="<?php echo $item->id ?>">
+			<a>ladda upp bild: <input type="file" name="thumbnail" value=""></a><br>
+			<a><input type="submit" class="btn" value="Ladda upp"></a>
 		</form>
+
+
 		<p><a href="/admin/items/index.php">&laquo; Tillbaka</a></p>
 	</section>
 	<?php require_once('../footer_admin.php'); ?>

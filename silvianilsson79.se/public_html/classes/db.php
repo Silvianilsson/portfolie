@@ -25,7 +25,12 @@ class Db
 
   public function getItems() 
   {
-    $sth = $this->dbh->query($this->item_sql);
+    $sql = "select portfolio_items.id, portfolio_items.title, portfolio_items.url, 
+            portfolio_items.category_id,portfolio_items.bild,
+            portfolio_items.description,Categories.name as category_name
+            from portfolio_items inner join Categories on portfolio_items.category_id =Categories.id";
+            
+    $sth = $this->dbh->query($sql);
     $sth->setFetchMode(PDO::FETCH_CLASS, 'item');
 
     $objects = array();
