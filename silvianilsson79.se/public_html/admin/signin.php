@@ -10,14 +10,12 @@ if (isset($_POST['username']))
 	if ($username == USER && $password == PASS)
 	{
 		$_SESSION['is_logged_in'] = true;
-		header("Location: /admin/index.php");
 		
+		header("Location: /admin/index.php");	
 	}
 	else
 	{
 		header("Location: /admin/login.php");
 	}
 }
-
-
 ?>

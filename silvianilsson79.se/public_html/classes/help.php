@@ -19,5 +19,4 @@ function select($name, $title, $items, $selected_id = null)
     $html .= '</select>';
     return $html;
 }
-
 ?>

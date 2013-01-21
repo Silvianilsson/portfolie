@@ -9,7 +9,7 @@
   
   <link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="images/images.jpeg">
-  <link rel="stylesheet" href="../../css/style.css"/> 
-  <link rel="stylesheet" href="../../css/admin_style.css"/> 
+  <link rel="stylesheet" href="/css/style.css"/> 
+  <link rel="stylesheet" href="/css/admin_style.css"/> 
   
 </head>

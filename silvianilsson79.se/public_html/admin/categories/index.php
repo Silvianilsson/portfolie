@@ -14,7 +14,7 @@ $categories = $db->getCategories();
 <section id="page_container">
 	<section id="head">
 		<section id="head-left"><h1>Kategori</h1></section>
-		<section id="head-right"><a href='loggut.php'>Logga ut</a></section>
+		<section id="head-right"><a href='../loggut.php'>Logga ut</a></section>
 	</section>
 
 	<section id="center_column">
