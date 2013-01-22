@@ -25,8 +25,6 @@ function portfolio_item($item)
 }
 ?>
 
-
-
 <body>
   
   <section id="page_container">

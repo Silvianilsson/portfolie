@@ -32,7 +32,7 @@ $categories = $db->getCategories();
 				<tr>
 					<td><?php echo $category->id ?></td>
 					<td><?php echo $category->name ?></td>
-					<td>
+					<td class="redigera">
 						<a href="/admin/categories/edit.php?id=<?php echo $category->id ?>">Redigera</a> |
 						<a href="/admin/categories/confirm.php?id=<?php echo $category->id ?>&name=<?php echo $category->name ?>">Ta bort</a>
 					</td>

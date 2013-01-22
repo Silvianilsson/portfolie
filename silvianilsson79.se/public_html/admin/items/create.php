@@ -3,7 +3,7 @@
 require_once('../../config.php');
 require_once(ROOT_PATH.'/classes/db.php');
 require_once(ROOT_PATH.'/classes/skydd.php');
-
+require_once(ROOT_PATH.'/classes/help.php');
 
 $db = new db();
 
@@ -17,5 +17,4 @@ $item->bild = $_POST['bild'];
 
 $db->createItem($item);
 header("Location: /admin/items/index.php");
-
 ?>

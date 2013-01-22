@@ -4,11 +4,6 @@ require_once('../config.php');
 require_once(ROOT_PATH.'/classes/db.php');
 require_once(ROOT_PATH.'/classes/skydd.php');
 
-$db = new Db();
-
-$categories = $db->getCategories();
-$items = $db->getItems();
-
 ?>
 <?php require_once('header_admin.php'); ?>
 
