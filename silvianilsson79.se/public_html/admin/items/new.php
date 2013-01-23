@@ -7,8 +7,6 @@ require_once(ROOT_PATH.'/classes/help.php');
 
 $db = new Db();
 
-$item = new Item();
-
 $categories = $db->getCategories(); 
 
 ?>
@@ -23,12 +21,12 @@ $categories = $db->getCategories();
 
 	<section id="center_column">
 
-		<form action="create.php" method="post">
+		<form action="create.php" method="post" enctype="multipart/form-data">
 			<a>title: <input type="text" name="title" value=""></a><br>
 			<a>url: <input type="text" name="url" value=""></a><br>
 			<a>description: <input type="text" name="description" value=""></a><br>
 			<a>kategori: <?php echo select('category_id', 'Kategori: ', $categories)?></a><br>   
-			<a><input type="hidden" name="bild" value=""></a><br>
+			<a>bild: <input type="file" name="thumbnail" value=""></a><br>
 			<a><input type="submit" class='btn' value="Lägg till"></a>
 		</form>
 

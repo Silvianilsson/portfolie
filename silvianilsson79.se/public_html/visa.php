@@ -3,10 +3,8 @@
 require_once('config.php');
 require_once(ROOT_PATH.'/classes/db.php');
 
-if (isset($_GET['id'])) 
-{
-	$id = $_GET['id'];
-}
+//hämtar ut id 
+$id = $_GET['id'];
 
 $db = new Db();
 $item = $db->getItem($id);
@@ -16,8 +14,6 @@ if (!$item)
 	header('HTTP/1.0 404 not found');
 	exit();
 }
-
-$page_title = $item->title;
 
 ?>
 <?php require_once('./php/header.php'); ?>
@@ -38,15 +34,14 @@ $page_title = $item->title;
 		<section>
 			<div>
 				<a href="<?php echo $item->url ?>">
-					<img src="<?php echo RELATIVE_UPLOAD_PATH.$item->bild ?>">
-					<img src="<?php echo RELATIVE_UPLOAD_PATH.$item->bild_2 ?>">
-					<img src="<?php echo RELATIVE_UPLOAD_PATH.$item->bild_3 ?>">
+					<img class="thumbnail" src="<?php echo RELATIVE_UPLOAD_PATH.$item->bild ?>">
+					
 				</a>
 				<p><?php echo nl2br($item->title) ?></p>
 				<p>Beskrivning: <strong><?php echo $item->description?></strong></p>
 			</div>
 
-			<p><a href="/kurser.php">&laquo; Tillbaka</a></p>
+			<p><a href="/portfolio.php">&laquo; Tillbaka</a></p>
 		</section>
 		<?php require_once('php/footer.php'); ?>
 	</section>

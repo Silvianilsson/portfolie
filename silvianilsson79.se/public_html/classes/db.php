@@ -25,6 +25,11 @@ class Db
             portfolio_items.description,Categories.name as category_name
             from portfolio_items inner join Categories on portfolio_items.category_id =Categories.id";
 
+  private $item_category = "select portfolio_items.id, portfolio_items.title, portfolio_items.url, 
+            portfolio_items.category_id,portfolio_items.bild,portfolio_items.bild_2,portfolio_items.bild_3,
+            portfolio_items.description,Categories.name as category_name
+            from portfolio_items inner join Categories on portfolio_items.category_id = Categories.id where Categories.id = :id";          
+
   private $category_sql = "select * from Categories";
 
   public function getItems() 
@@ -190,6 +195,25 @@ class Db
     {
       return false;
     }
+  }
+
+  public function getItems_by_category($id) 
+  {
+    $sql = $this->item_category;
+    $sth = $this->dbh->prepare($sql);
+    $sth->bindParam(':id', $id, PDO::PARAM_INT);
+    $sth->setFetchMode(PDO::FETCH_CLASS, 'item');
+    $sth->execute();
+    
+
+    $objects = array();
+
+    while($obj = $sth->fetch()) 
+    {
+      $objects[] = $obj;
+    }
+
+    return $objects;
   }
 
 }

@@ -2,6 +2,7 @@
 
 require_once('../config.php');
 
+// om användar namnet är satt försök logga in
 if (isset($_POST['username']))
 {   
 	$username = $_POST['username'];

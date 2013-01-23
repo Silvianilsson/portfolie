@@ -3,6 +3,7 @@
 $meny = array();
 $meny[] = array('text' => 'Hem', 'url' => '/index.php');  
 $meny[] = array('text' => 'Om mig', 'url' => '/ommig.php');
+$meny[] = array('text' => 'Portfolio', 'url' => '/portfolio.php');
 $meny[] = array('text' => 'Kontakt', 'url' => '/kontakt.php');
 $meny[] = array('text' => 'Foton', 'url' => '/foton.php');
 $meny[] = array('text' => 'Kurser', 'url' => '/kurser.php');

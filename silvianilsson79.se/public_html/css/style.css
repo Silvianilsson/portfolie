@@ -17,6 +17,7 @@
 		Kontakt
 		Foto
 		Länkar
+		Portfolio
 ----------------------------------*/
 
 /*---------- Reset ---------------*/
@@ -357,5 +358,25 @@ img.foto3
 	top:58%;
 	left:-28%;
 }
-	
+
+/*--------------- portfolio -------------------*/	
+
+img.thumbnail
+{
+	width: 80px;
+	height: 80px;
+}
+
+ul.portfolio_list
+{
+	list-style:none;
+	position:relative;
+	top:80px;
+}
+
+li.portfolio-item
+{
+	display:inline-block;
+
+}
 
