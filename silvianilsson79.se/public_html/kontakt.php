@@ -19,7 +19,7 @@
    <a href="mailto:silvia.nilsson@hotmail.com">silvia.nilsson@hotmail.com</a></p>
    <img class="sladd" src="images/kontakt.jpg" alt="Kontakt" title="Kontakt" height="500 px"img>
 
-  <form class="contact-form" method="post" action="">
+  <form class="contact-form" method="post" action="silvia.nilsson@hotmail.com">
     <?php echo form_input('text', 'name', 'Namn:', 'Namn') ?></br>
     <?php echo form_input('email', 'email', 'E-post:', 'E-post') ?></br>
     <?php echo text_area('message', 'Meddelande'); ?></br>
