@@ -14,7 +14,7 @@ $items = $db->getCategories();
 function portfolio_item($item) 
 {
 
-      $html = '<li class="portfolio-item">';
+      $html = '<li class="portfolio-item-kurser">';
       $html .= '<a href="/portfolio_by_category.php?id='.$item->id.'">';
       $html .= $item->name;
       $html .= '</a>';
@@ -45,9 +45,9 @@ function portfolio_item($item)
             <?php echo portfolio_item($item); ?>
           <?php endforeach ?>
        </ul>
-
+      
       <img class="links_pic" src="images/kurser2.jpg" alt="Kurs" title="Kurs"/>
-      <img class="links_pic" src="images/Webanalyse_undervisning.jpg" alt="Kurs" title="Kurs"/>
+
     </section>
 
     <section id="right_column">

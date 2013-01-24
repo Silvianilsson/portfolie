@@ -16,7 +16,7 @@ $items = $db->getItems_by_category($_GET['id']);
 function portfolio_item($item) 
 {
 
-      $html = '<li class="portfolio-item">';
+      $html = '<li class="portfolio-item-kurser">';
       $html .= '<a href="/visa.php?id='.$item->id.'">';
       $html .= $item->title;
       $html .= '</a>';
@@ -48,7 +48,6 @@ function portfolio_item($item)
           <?php endforeach ?>
        </ul>
 
-      <img class="links_pic" src="images/kurser2.jpg" alt="Kurs" title="Kurs"/>
       <img class="links_pic" src="images/Webanalyse_undervisning.jpg" alt="Kurs" title="Kurs"/>
     </section>
 
