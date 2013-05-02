@@ -41,7 +41,7 @@ if (!$item)
 				<p>Beskrivning: <strong><?php echo $item->description?></strong></p>
 			</div>
 
-			<p><a href="/portfolio.php">&laquo; Tillbaka</a></p>
+			<p><a href="/kurser.php">&laquo; Tillbaka</a></p>
 		</section>
 		<?php require_once('php/footer.php'); ?>
 	</section>

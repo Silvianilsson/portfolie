@@ -56,6 +56,7 @@ h1, p, a, button, article, th, td, input
 	height:100%;
 	background-color:#C3B091;
 	color:#000;
+	border-radius: 5px 0px 0px 5px;
 }
 
 #head-right
@@ -64,6 +65,7 @@ h1, p, a, button, article, th, td, input
 	width:60%;
 	height:100%;
 	background-color:#C3B091;
+	border-radius: 0px 5px 5px 0px;
 }
 
 #left_column 
@@ -92,7 +94,8 @@ h1, p, a, button, article, th, td, input
 	clear:both;
 	text-align:center;
 	background-color:#C3B091;
-	line-height:70px
+	line-height:70px;
+	border-radius: 5px;
 }
 
 #admin_link
@@ -321,6 +324,7 @@ img.sladd
 {
 	font-size:13px;
 	border-radius:5px;
+	font-family: 'Courgette', cursive;
 }
 
 .controls
@@ -365,6 +369,7 @@ img.thumbnail
 {
 	width: 100px;
 	height: 100px;
+	border-radius: 2px;
 }
 
 ul.portfolio_list

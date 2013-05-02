@@ -3,7 +3,6 @@
 require_once(ROOT_PATH.'/classes/item.php');
 require_once(ROOT_PATH.'/classes/category.php');
 
-
 class Db 
 {
 	private $dbh = null;
@@ -12,7 +11,9 @@ class Db
 	{
 		try 
 		{
+      mysql_query("SET NAMES utf8;");
 			$this->dbh = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME.";charset=utf8", DB_USER, DB_PASS);
+        
 		} 
 		catch(PDOException $e) 
 		{
