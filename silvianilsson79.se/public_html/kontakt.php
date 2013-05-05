@@ -14,6 +14,16 @@
   </section>
 </section>
 
+<section id="tack">
+<?php
+if(isset($_GET["mailsent"]))
+{
+  echo "Tack för ditt meddelande";
+}
+?>
+</section>
+
+
 <section id="center_column">
   <p class="contact">Mobilnummer:0709-252835</br>
    <a href="mailto:silvia.nilsson@hotmail.com">silvia.nilsson@hotmail.com</a></p>
@@ -24,8 +34,6 @@
     <?php echo form_input('email', 'email', 'E-post:', 'E-post') ?></br>
     <?php echo text_area('message', 'Meddelande'); ?></br>
     
-    
-
     <section class="control-group">
       <section class="controls">
         <button type="submit" class="btn">Skicka meddelande</button>

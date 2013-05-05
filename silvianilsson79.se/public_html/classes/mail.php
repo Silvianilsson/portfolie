@@ -10,5 +10,5 @@ $headers = 'From:'.$from . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
 mail($to, $subject, $message, $headers);
-header("Location: /kontakt.php?name=".$subject);
+header("Location: /kontakt.php?mailsent=true");
 ?>

@@ -320,11 +320,21 @@ img.sladd
 	font-size:13px;
 }
 
+#tack
+{
+	position:relative;
+	font-size: 18px;
+	right: -320px;
+	top: 40px;
+	font-family: 'Courgette', cursive;
+}
+
 .btn
 {
 	font-size:13px;
 	border-radius:5px;
 	font-family: 'Courgette', cursive;
+	cursor:pointer;
 }
 
 .controls
