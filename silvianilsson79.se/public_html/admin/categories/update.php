@@ -13,8 +13,4 @@ $category->name = $_POST['name'];
 
 $db->updateCategory($category);
 header("Location: /admin/categories/edit.php?id=".$category->id);
-
-
-
-
 ?>

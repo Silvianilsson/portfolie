@@ -31,5 +31,3 @@ $meny[] = array('text' => 'Länkar', 'url' => '/links.php');
 </li>
 <?php endforeach ?>
 </ul>
-
-

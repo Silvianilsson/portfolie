@@ -41,8 +41,5 @@
 <?php require_once('./php/footer.php'); ?>
 
 </section>
-
-
-
 </body>
 </html>

@@ -1,7 +1,5 @@
 <?php require_once('./php/header.php'); ?>
-
 <?php
-
 require_once('config.php');
 require_once(ROOT_PATH.'/classes/db.php');
 
@@ -55,7 +53,5 @@ function portfolio_item($item)
 
     <?php require_once('./php/footer.php'); ?>
   </section>
-
-
 </body>
 </html>

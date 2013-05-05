@@ -42,5 +42,3 @@ function form_input($type, $name, $label_text, $placeholder_text = null)
 
   return $html;
 }
-
-

@@ -1,5 +1,4 @@
 <?php
-
 require_once(ROOT_PATH.'/classes/item.php');
 require_once(ROOT_PATH.'/classes/category.php');
 
@@ -11,8 +10,10 @@ class Db
 	{
 		try 
 		{
-			$this->dbh = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME.";charset=utf8", DB_USER, DB_PASS);  
-		} 
+      $options = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
+
+			$this->dbh = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME.";charset=utf8", DB_USER, DB_PASS, $options); 
+		}
 		catch(PDOException $e) 
 		{
 			echo $e->getMessage();
